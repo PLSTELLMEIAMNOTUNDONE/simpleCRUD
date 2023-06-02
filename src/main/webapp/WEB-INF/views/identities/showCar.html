@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Car</title>
+</head>
+<body>
+<p th:text="${Car.getId()}">VALUE</p>
+<p th:text="${Car.getName()}">VALUE</p>
+<p th:text="${Car.getAge()}">VALUE</p>
+<p th:text="${Car.getPrice()}">VALUE</p>
+<p th:text="${Car.getModelInf()}">VALUE</p>
+<p>
+    <a th:href="@{/identities/{id}(id=${Car.getId()})}">Back</a>
+</p>
+</body>
+</html>

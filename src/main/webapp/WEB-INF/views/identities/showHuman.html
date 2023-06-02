@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Human</title>
+</head>
+<body>
+<p th:text="${Human.getId()}">VALUE</p>
+<p th:text="${Human.getName()}">VALUE</p>
+<p th:text="${Human.getAge()}">VALUE</p>
+<p th:text="${Human.getWork()}">VALUE</p>
+<p th:text="${Human.getSex()}">VALUE</p>
+<p>
+  <a th:href="@{/identities/{id}(id=${Human.getId()})}">Back</a>
+</p>
+</body>
+</html>
